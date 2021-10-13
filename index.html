@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Video Player</title>
 </head>
 <body>
-    <video controls autoplay muted src="./videos/lofi.mp4"></video>
-    <button>play</button>
-    <button>pause</button>
+    <video id="video" poster="./images/poster.jpg" controls muted src="./videos/lofi.mp4"></video>
+    <button class="button" id="play"></button>
+    <button class="button" id="pause"></button>
+    <button class="button" id="backward"></button>
+    <button class="button" id="forward"></button>
     <button>avanzar 10 segundos</button>
+<script>
+    /*realizamos un selector para guardar en un contenedor el video*/
+    const $video = document.querySelector('#video')
+    const $play = document.querySelector('#play')
+    const $pause = document.querySelector('#pause')
+
+    /*eventos (metodo) al accionar clic*/
+    $play.addEventListener('click', handlePlay )
+    $pause.addEventListener('click', handlePause )
+
+    function handlePlay(){
+        $video.play()
+        console.log('le distes clik al boton de play')
+    }
+
+    function handlePause(){
+        $video.pause()
+        console.log('le distes clik al boton de pause')
+    }
+
+</script>
+
 </body>
 </html>

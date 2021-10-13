@@ -25,11 +25,14 @@
 
     function handlePlay(){
         $video.play()
+        $play.hidden = true
+        $pause.hidden = false
         console.log('le distes clik al boton de play')
     }
-
     function handlePause(){
         $video.pause()
+        $pause.hidden = true
+        $play.hidden = false
         console.log('le distes clik al boton de pause')
     }
 

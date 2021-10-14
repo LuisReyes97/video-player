@@ -37,3 +37,25 @@
         $video.currentTime = $video.currentTime + 10
         console.log('avanzar 10s')
     }
+
+    const $progress = document.querySelector('#progress')
+    $video.addEventListener('loadedmetadata', handleLoaded)
+    $video.addEventListener('timeupdate', handleTimeUpdate)
+
+    function handleLoaded() {
+       $progress.max = $video.duration
+        console.log('cargar mi video')
+        
+    }
+
+    function handleTimeUpdate(){
+        $progress.value = $video.currentTime
+        //console.log('holi')
+    }
+
+    $progress.addEventListener('input',handleInput)
+
+    function handleInput(){
+        $video.currentTime = $progress.value
+        console.log($progress.value)
+    }

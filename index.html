@@ -10,15 +10,17 @@
     <div class="wrapper">
         <div class="player">
             <video id="video" poster="./images/poster.jpg"  src="./videos/lofi.mp4"></video>
-            <h2 class="player-title">Reproductor</h2>
-            <div class="player-actions">
-                <button class="button" id="backward" aria-label="retroceder 10s" title="retroceder 10s"></button>
-                <button class="button" id="play" aria-label="Play" title="Play"></button>
-                <button class="button" id="pause" aria-label="pause" title="Pausa"></button>
-                <button class="button" id="forward" aria-label="avanzar 10s" title="avanzar 10s"></button>
-            </div>
-            <div class="player-progress">
-                <input id="progress" type="range" min="0" value="0" step="1">
+            <div class="player-overlay">
+                <h2 class="player-title">Reproductor</h2>
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="retroceder 10s" title="retroceder 10s"></button>
+                    <button class="button" id="play" aria-label="Play" title="Play"></button>
+                    <button class="button" id="pause" aria-label="pause" title="Pausa"></button>
+                    <button class="button" id="forward" aria-label="avanzar 10s" title="avanzar 10s"></button>
+                </div>
+                <div class="player-progress">
+                    <input id="progress" type="range" min="0" value="0" step="1">
+                </div>
             </div>
         </div>
     </div>

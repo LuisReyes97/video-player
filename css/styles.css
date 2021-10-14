@@ -21,6 +21,7 @@ body{
     inline-size: 100%;
     aspect-ratio: 16/9;
     vertical-align: middle;
+    object-fit: cover;
    
 
 }
@@ -52,4 +53,16 @@ body{
 
 .player-progress input{
     flex: 1;
+}
+
+.player-overlay{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.player:hover .player-overlay{
+    opacity: 1;
+
 }

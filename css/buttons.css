@@ -12,7 +12,7 @@
     transform: scale(.9);
 }
 
-/*style for button | Ing. Luis Reyes*/
+/*importamos los iconos*/
 #play{
     background-image: url(../images/play.svg);
 }

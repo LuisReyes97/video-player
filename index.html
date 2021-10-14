@@ -16,30 +16,6 @@
             <button class="button" id="forward" aria-label="avanzar 10s" title="avanzar 10s"></button>
         </div>
     </div>
-<script>
-    /*realizamos un selector para guardar en un contenedor el video*/
-    const $video = document.querySelector('#video')
-    const $play = document.querySelector('#play')
-    const $pause = document.querySelector('#pause')
-
-    /*eventos (metodo) al accionar clic*/
-    $play.addEventListener('click', handlePlay )
-    $pause.addEventListener('click', handlePause )
-
-    function handlePlay(){
-        $video.play()
-        $play.hidden = true
-        $pause.hidden = false
-        console.log('le distes clik al boton de play')
-    }
-    function handlePause(){
-        $video.pause()
-        $pause.hidden = true
-        $play.hidden = false
-        console.log('le distes clik al boton de pause')
-    }
-
-</script>
-
+<script src="./js/index.js"></script>
 </body>
 </html>

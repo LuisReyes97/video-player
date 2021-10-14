@@ -9,11 +9,17 @@
 <body>
     <div class="wrapper">
         <div class="player">
-            <video id="video" poster="./images/poster.jpg" controls muted src="./videos/lofi.mp4"></video>
-            <button class="button" id="backward" aria-label="retroceder 10s" title="retroceder 10s"></button>
-            <button class="button" id="play" aria-label="Play" title="Play"></button>
-            <button class="button" id="pause" aria-label="pause" title="Pausa"></button>
-            <button class="button" id="forward" aria-label="avanzar 10s" title="avanzar 10s"></button>
+            <video id="video" poster="./images/poster.jpg"  src="./videos/lofi.mp4"></video>
+            <h2 class="player-title">Reproductor</h2>
+            <div class="player-actions">
+                <button class="button" id="backward" aria-label="retroceder 10s" title="retroceder 10s"></button>
+                <button class="button" id="play" aria-label="Play" title="Play"></button>
+                <button class="button" id="pause" aria-label="pause" title="Pausa"></button>
+                <button class="button" id="forward" aria-label="avanzar 10s" title="avanzar 10s"></button>
+            </div>
+            <div class="player-progress">
+                <input type="range">
+            </div>
         </div>
     </div>
 <script src="./js/index.js"></script>
